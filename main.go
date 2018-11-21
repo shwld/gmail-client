@@ -11,7 +11,7 @@ func main() {
 	if err != nil {
 			panic(err)
 	}
-	dir := user.HomeDir + "/.lorca-app"
+	dir := user.HomeDir + "/.gmail-client"
 	os.MkdirAll(dir, os.ModePerm);
 	ui, _ := lorca.New("https://mail.google.com", dir, 2000, 1000, "--start-maximized")
 	defer ui.Close()
